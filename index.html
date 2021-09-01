@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Sending Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header role="banner" class="header">
+        <ul class="header__social">
+            <li><a href="#" class="social-icons-link mail"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="#" class="social-icons-link twitter"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+    </header>
+    <main role="main" class="main">
+        <form class="form" role="form" action="#" method="POST">
+            <h1 class="form__title">Send your legislators an email now!</h1>
+            <div class="form__row">
+                <label for="name" class="form__label">
+                    <span class="form__label-name">Your Full Name</span>
+                    <input class="form__label-input" type="text" placeholder="Enter your full name" name="fullName" autocomplete="off" id="name" aria-required="true">
+                    <span class="form__required">*</span>
+                </label>
+            </div>
+            <div class="form__row">
+                <label for="street-address" class="form__label">
+                    <span class="form__label-name">Street Address</span>
+                    <input class="form__label-input" type="text" placeholder="Enter street address" name="address" autocomplete="off" id="street-address" aria-required="true">
+                    <span class="form__required">*</span>
+                </label>
+            </div>
+            <div class="form__row">
+                <label for="zip-code" class="form__label">
+                    <span class="form__label-name">Postal code</span> 
+                    <input class="form__label-input form__label--zipcode" type="text" placeholder="Enter postal code" name="zipcode" autocomplete="off" id="zip-code" aria-required="true">
+                    <span class="form__required">*</span>
+                </label>
+                <span class="zipcode-msg">city and state not required</span>
+            </div>
+            <div class="form__row">
+                <label for="phone-number" class="form__label">
+                    <span class="form__label-name">Phone Number</span> 
+                    <input class="form__label-input" type="tel" placeholder="Enter your phone number" name="phoneNumber" autocomplete="off" id="phone-number" aria-required="true">
+                    <span class="form__required">*</span>
+                </label>
+            </div>
+            <div class="form__row">
+                <label for="email" class="form__label">
+                    <span class="form__label-name">Email address</span> 
+                    <input class="form__label-input" type="email" placeholder="Enter your email address" name="email" autocomplete="off" id="email" aria-required="true">
+                    <span class="form__required">*</span>
+                </label>
+            </div>
+            <div class="form__row">
+                <label for="subject" class="form__subject">
+                    <span class="form__subject--position">Subject: </span>
+                    <input class="form__label-input sub" id="subject" autocomplete="off" type="text" placeholder="Type your subject">
+                </label>
+            </div>
+            <div class="form__row">
+                <label for="message-area" class="form__label-name">Enter your message</label>
+                <textarea id="message-area" rows="6" placeholder="Type your message here" class="form__textarea"></textarea>
+            </div>
+            <div class="checkbox">
+                <label for="email-checkbox">
+                    <input id="email-checkbox" type="checkbox" name="subscribeEmail" class="checkbox-input"> 
+                    <span class="checkbox-custom"></span>
+                </label> 
+                <span class="checkbox-value">Send me emails about this campaign</span> 
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis explicabo modi ab veniam <a href="#">assumenda quidem</a> suscipit id, molestiae ducimus non nam, ad inventore numquam labore iure tempora laborum aspernatur officia!</p>
+            </div>
+            <button type="submit" class="form__button">Next: Your message</button>
+        </form>
+    </main>
+    <footer role="contentinfo" class="footer">
+        <div class="footer__social">
+            <p>Share with Others</p> 
+            <ul class="footer__social-icons">
+                <li><a href="#" aria-label="Share on Twitter" class="social-icons-link facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" aria-label="Share on Facebook" class="social-icons-link twitter"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+        </div> 
+        <div class="footer__copyright">
+            <p>
+                <span>Ⓒ 2021. All rights reserved.</span> 
+                <span>Subject to </span>
+                <a href="#" aria-label="Privacy Policy">Privacy Policy</a>
+                <span>.</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
